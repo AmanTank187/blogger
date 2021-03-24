@@ -1,6 +1,7 @@
 # Blog
 
 Intro:
+[BloggerHeroku](https://bloggerat.herokuapp.com/)
 
 ---
 
@@ -92,6 +93,8 @@ Intro:
 - Whilst implementing the delete method for the article method i came across an unusual error which seemed to be coming from webpacker and the javascript tag within the layout/application.html.erb file. The error was that every time i would try to delete an article it would just show the article and was not understanding that i wanted a delete request. It Seemed like a deep rooted issue so i decided to create a new rails project and copy my code over... it started to work the way i intended it too. At this point on my previous repo i was 13 commits in.
 
 ![Previous commits](https://user-images.githubusercontent.com/37899538/112188037-8c7cb500-8bfa-11eb-875a-1efbe8657b60.png)
+
+- Deploying to heroku was an issue for me. My ruby version in the gemfile did not work with heroku 20 so i had to change the version to 2.6.6 and then the bunlder needed updating. Once this was done, i used a ENV variable in the database.yml file for production and rain 'heroku run rails db:migrate" and the app was finally deployed to heroku.
 
 ---
 
