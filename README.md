@@ -54,6 +54,13 @@ Intro:
 
 - Update method: You find the article you want to edit using the ID, you then do `article.update(params.require(:article).permit(:title, :description))` with the edited fields. In addition to this i added a IF statement to show a flash message and redirect the user if the updated is sucessful. If the update is not sucessful it will redirect you back to the edit page.
 
+- Delete method: Find the article by ID and then use `@article.destory`which will remove it from the table. Redirect the method to the list of articles.
+  `redirect_to articles_path`.
+
+  - Adding links to the index.html. If the route has an ID you'll see to pass it through. For example the show link is created like this: `link_to 'Show', article_path(article)`.
+    The first part is the name and then the route which takes the article ID. The route on the webpage would look something like 'articles/1'.
+    The needed path can be found with `rails routes --expanded` and the prefix label tell you the path to use.
+
 # Flash Messages
 
 - Creating a flash message in order to show user if they have ran into errors whilst creating an article and creating a flash message to show they have created a article successfully.
