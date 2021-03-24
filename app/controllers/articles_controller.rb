@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
+    before_action :set_article, only: [:show,:edit, :update, :destroy]
     def show 
-        #This method finds a specific article using the id of the article
-        @article = Article.find(params[:id])
+        
     end
 
     def index 
@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
     end 
 
     def create 
-        @article = Article.new(params.require(:article).permit(:title, :description))
+        @article = Article.new(article_params)
         if @article.save
             #If the article is saved then it will show the message and redirect user
             #Want the flash notice to appear on the layout page
@@ -30,13 +30,11 @@ class ArticlesController < ApplicationController
     end 
 
     def edit 
-        @article = Article.find(params[:id])
+        
     end 
 
     def update
-        @article = Article.find(params[:id])
-        
-        if @article.update(params.require(:article).permit(:title, :description))
+        if @article.update(article_params)
             #If the article is saved then it will show the message and redirect user
             #Want the flash notice to appear on the layout page
             flash[:notice] = "Article was updated sccessfully."
@@ -49,9 +47,18 @@ class ArticlesController < ApplicationController
     end 
 
     def destroy 
-        @article = Article.find(params[:id])
         @article.destroy
         redirect_to articles_path 
+    end 
+
+    private 
+
+    def set_article
+        @article = Article.find(params[:id])
+    end 
+
+    def article_params
+        params.require(:article).permit(:title, :description)
     end 
 end 
 

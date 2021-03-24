@@ -57,9 +57,23 @@ Intro:
 - Delete method: Find the article by ID and then use `@article.destory`which will remove it from the table. Redirect the method to the list of articles.
   `redirect_to articles_path`.
 
-  - Adding links to the index.html. If the route has an ID you'll see to pass it through. For example the show link is created like this: `link_to 'Show', article_path(article)`.
-    The first part is the name and then the route which takes the article ID. The route on the webpage would look something like 'articles/1'.
-    The needed path can be found with `rails routes --expanded` and the prefix label tell you the path to use.
+- Adding links to the index.html. If the route has an ID you'll see to pass it through. For example the show link is created like this: `link_to 'Show', article_path(article)`.
+  The first part is the name and then the route which takes the article ID. The route on the webpage would look something like 'articles/1'.
+  The needed path can be found with `rails routes --expanded` and the prefix label tell you the path to use.
+
+## Refactoring the articles model
+
+- The line `@article = Article.find(params[:id])`has been used often in the code so to keep the code DRY
+  I have extracted the line into a private method called set_article. Due to the frequency of it being used, i have added
+  a before action for the methods its used in. Example: `before_action :set_article, only: [:show,:edit, :update, :destroy]`.
+  This keeps the code way more DRY than call the method each time where it is needed.
+
+- The line `params.require(:article).permit(:title, :description)`is used twice so its extracted into a method called article_params
+  and since its only used twice i have called it from where it needs to be called from.
+
+  - Adding a partial file for similar views. syntax for partial is underscore then name like '\_messages.html.erb'
+    then you render it when you need it like in application layout file "render 'layouts/messages'".
+    - I want to make a partial for common code in edit and new.
 
 # Flash Messages
 
