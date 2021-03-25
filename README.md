@@ -78,7 +78,10 @@ Intro:
 
 ## Styling!
 
--
+- Good resources for styling:
+  - ![Good colour combos](https://visme.co/blog/website-color-schemes/)
+  - ![How to add bootstrap to rails app](https://www.mashrurhossain.com/blog/rails6bootstrap4)
+  - ![Source for website images](https://unsplash.com/)
 
 # Flash Messages
 
