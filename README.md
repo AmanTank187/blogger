@@ -74,7 +74,11 @@ Intro:
 
   - Adding a partial file for similar views. syntax for partial is underscore then name like '\_messages.html.erb'
     then you render it when you need it like in application layout file "render 'layouts/messages'".
-    - I want to make a partial for common code in edit and new.
+  - I want to make a partial for common code in edit and new.
+
+## Styling!
+
+-
 
 # Flash Messages
 
