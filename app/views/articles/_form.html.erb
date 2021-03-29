@@ -1,26 +1,36 @@
-<% if @article.errors.any? %>
-    <h2>The following errors prevented the article from being save</h2>
-    <ul>
-    <% @article.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li> 
+<div class="container">
+    <% if @article.errors.any? %>
+        <h2>The following errors prevented the article from being save</h2>
+        <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li> 
+        <% end %>
+        </ul>
     <% end %>
-    </ul>
-<% end %>
 
 
-<!-- by specifying model article, it knows where to submit the form and prefills title and description with existing data -->
-<%= form_with(model: @article, local: true)  do |f| %>
-    <p> 
-        <%= f.label :title %><br/>
-        <%= f.text_field :title %>
-    </p>
+    <div class="row justify-content-center">
+        <div class="col-10">
+        <%= form_with(model: @article, local: true,)  do |f| %>
+            <div class="form-group ">
+                <%= f.label :title, class: "col-2 col-form-label text-info" %>
+                <div class="col-10">
+                <%= f.text_field :title, class: "form-control", placeholder: "Title of Article" %>
+                </div>
+            </div>
 
-    <p> 
-        <%= f.label :description %><br/>
-        <%= f.text_area :description %>
-    </p>
+            <div class="form-group">
+                <%= f.label :description, class: "col-2 col-form-label text-info"%>
+                <div class="col-10">
+                    <%= f.text_area :description,rows: 8, class: "form-control" ,placeholder: "Description of Article" %>
+                </div>
+            </div>
 
-    <p> 
-        <%= f.submit %>
-    </p>
-<% end %>
+            <div class="form-group row justify-content-center">
+                <%= f.submit class: "btn btn-outline-info btn-lg" %>
+                </div>
+            <% end %>
+        </div> 
+        <%= link_to ' Cancel and return to articles listing ', articles_path, class: "text-info" %>
+    </div>
+</div>
