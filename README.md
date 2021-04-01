@@ -105,6 +105,12 @@ Intro:
 
 ---
 
+# Users model:
+
+## Branches
+
+- Our master branch needs to be in a deployable state at all time and since im going to be creating a new model i want to create a new branch called feature so i can keep updating the users branch until its deployable.
+
 - Ruby version
 
 - System dependencies
