@@ -111,6 +111,8 @@ Intro:
 
 - Our master branch needs to be in a deployable state at all time and since im going to be creating a new model i want to create a new branch called feature so i can keep updating the users branch until its deployable.
 
+- Including validations for the user table, They're has to be a unique username and email present when created, no matter the case if they have same letters as another user it will not be valid. The username can be min length of 3 and max of 30. The email has no minimum length but has a max of 105 and uses a regex expression to ensure that the input for email should be in the correct format to be valid.
+
 - Ruby version
 
 - System dependencies
