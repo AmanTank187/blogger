@@ -18,7 +18,7 @@
 
                 <%= link_to "Articles",articles_path, class: "nav-link" %>
                 <div class="card-footer text-muted">
-                    <small>Created ago <%= time_ago_in_words(article.updated_at) %>,
+                    <small>Created ago <%= time_ago_in_words(article.created_at) %>,
                     Edited ago <%= time_ago_in_words(article.updated_at) %></small>
                 </div>
                 </div>
