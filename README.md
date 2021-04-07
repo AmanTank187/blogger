@@ -115,6 +115,8 @@ Intro:
 
 - Including validations for the user table, They're has to be a unique username and email present when created, no matter the case if they have same letters as another user it will not be valid. The username can be min length of 3 and max of 30. The email has no minimum length but has a max of 105 and uses a regex expression to ensure that the input for email should be in the correct format to be valid.
 
+- I started to use branches here for development. Quick tip is to use `git checkout -b user-articles-association` as it creates the new branch and checksout to it at the same time.
+
 - Ruby version
 
 - System dependencies
