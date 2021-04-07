@@ -117,6 +117,8 @@ Intro:
 
 - I started to use branches here for development. Quick tip is to use `git checkout -b user-articles-association` as it creates the new branch and checksout to it at the same time.
 
+- I added the association between users and articles. First created a migration file for adding a column to articles called user_id that was a int. Then to establish the connection between the two models i had to add `belongs_to :user` in the article.rb model file and added `has_many :articles` to the user.rb model file. To ensure my development server did not crash when i wanted to access it, i hard coded the articles create function to give each article a user and the already existing articles had to be given a user. This is a short fix until authentication is implemented.
+
 - Ruby version
 
 - System dependencies
