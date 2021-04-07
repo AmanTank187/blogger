@@ -115,7 +115,7 @@ Intro:
 
 - Including validations for the user table, They're has to be a unique username and email present when created, no matter the case if they have same letters as another user it will not be valid. The username can be min length of 3 and max of 30. The email has no minimum length but has a max of 105 and uses a regex expression to ensure that the input for email should be in the correct format to be valid.
 
-- I started to use branches here for development. Quick tip is to use `git checkout -b user-articles-association` as it creates the new branch and checksout to it at the same time.
+- I started to use branches here for development. Quick tip is to use `git checkout -b user-articles-association` as it creates the new branch and checksout to it at the same time. After finishing with the branch you will want to commit changes and then `git checkout main`. Once is main you can merge the branch into the main branch, in this case we would run ` git merge user-articles-association`.
 
 - I added the association between users and articles. First created a migration file for adding a column to articles called user_id that was a int. Then to establish the connection between the two models i had to add `belongs_to :user` in the article.rb model file and added `has_many :articles` to the user.rb model file. To ensure my development server did not crash when i wanted to access it, i hard coded the articles create function to give each article a user and the already existing articles had to be given a user. This is a short fix until authentication is implemented.
 
