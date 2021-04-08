@@ -113,7 +113,7 @@ Intro:
 
 - Our master branch needs to be in a deployable state at all time and since im going to be creating a new model i want to create a new branch called feature so i can keep updating the users branch until its deployable.
 
-- Including validations for the user table, They're has to be a unique username and email present when created, no matter the case if they have same letters as another user it will not be valid. The username can be min length of 3 and max of 30. The email has no minimum length but has a max of 105 and uses a regex expression to ensure that the input for email should be in the correct format to be valid.
+- Including validations for the user table, They're has to be a unique username and email present when created, no matter the case if they have same letters as another user it will not be valid. The username can be min length of 3 and max of 30. The email has no minimum length but has a max of 105 and uses a regex expression to ensure that the input for email should be in the correct format to be valid. Before the user is saved into the database a before_save action is taken to downcase the email so no uppercase letters are in the email.
 
 - I started to use branches here for development. Quick tip is to use `git checkout -b user-articles-association` as it creates the new branch and checksout to it at the same time. After finishing with the branch you will want to commit changes and then `git checkout main`. Once is main you can merge the branch into the main branch, in this case we would run ` git merge user-articles-association`.
 
