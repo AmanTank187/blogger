@@ -119,6 +119,8 @@ Intro:
 
 - I added the association between users and articles. First created a migration file for adding a column to articles called user_id that was a int. Then to establish the connection between the two models i had to add `belongs_to :user` in the article.rb model file and added `has_many :articles` to the user.rb model file. To ensure my development server did not crash when i wanted to access it, i hard coded the articles create function to give each article a user and the already existing articles had to be given a user. This is a short fix until authentication is implemented.
 
+- To setup authentication we have to uncomment the bycrpt gem thats in the gemfile. Go to the users model and add `has_secure_password`. The next step would be to create a migration file to add a column into users where the password would be kept.
+
 - Ruby version
 
 - System dependencies
