@@ -119,9 +119,11 @@ Intro:
 
 - I added the association between users and articles. First created a migration file for adding a column to articles called user_id that was a int. Then to establish the connection between the two models i had to add `belongs_to :user` in the article.rb model file and added `has_many :articles` to the user.rb model file. To ensure my development server did not crash when i wanted to access it, i hard coded the articles create function to give each article a user and the already existing articles had to be given a user. This is a short fix until authentication is implemented.
 
-- To setup authentication we have to uncomment the bycrpt gem thats in the gemfile. Go to the users model and add `has_secure_password`. The next step would be to create a migration file to add a column into users where the password would be kept. 
+- To setup authentication we have to uncomment the bycrpt gem thats in the gemfile. Go to the users model and add `has_secure_password`. The next step would be to create a migration file to add a column into users where the password would be kept.
 
-- Implemented creating a new user, to do this you need to assign a variable to User.new with user_params. It looks like this `@user = User.new(user_params)` The user_params function contains information taken from the form. Once this is done i use a IF statement to check if its save, if it is it will show a flash message and redirect you to articles page. If it does not save then it will render the user/new view again. 
+- Implemented creating a new user, to do this you need to assign a variable to User.new with user_params. It looks like this `@user = User.new(user_params)` The user_params function contains information taken from the form. Once this is done i use a IF statement to check if its save, if it is it will show a flash message and redirect you to articles page. If it does not save then it will render the user/new view again.
+
+- Creating the Update method is very similar to the articles method, I copied the code from the articles controller and changes the names. I created a edit view which renders a form partial. The form partial is used to sign up and to edit a users account. The form partial includes this line `<%= f.submit(@user.new_record? ? "Sign up" : "Update Profile", class: "btn btn-outline-info btn-lg") %>`. It checks if the user exists and if it does it will change the button to say Update profile, if the user does not exist then it will say Sign up.
 
 - Ruby version
 
