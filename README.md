@@ -125,6 +125,8 @@ Intro:
 
 - Creating the Update method is very similar to the articles method, I copied the code from the articles controller and changes the names. I created a edit view which renders a form partial. The form partial is used to sign up and to edit a users account. The form partial includes this line `<%= f.submit(@user.new_record? ? "Sign up" : "Update Profile", class: "btn btn-outline-info btn-lg") %>`. It checks if the user exists and if it does it will change the button to say Update profile, if the user does not exist then it will say Sign up.
 
+- Profile page: Created a show view which renders a article partial. Using a gravatar helper method which shows a image which is linked to the users email. The article partial uses `@articles` which is okay for the articles controller as that exists. For users that does not exist so in the show method i fixed this by doing ` @articles = @user.articles`.
+
 - Ruby version
 
 - System dependencies
