@@ -127,6 +127,8 @@ Intro:
 
 - Profile page: Created a show view which renders a article partial. Using a gravatar helper method which shows a image which is linked to the users email. The article partial uses `@articles` which is okay for the articles controller as that exists. For users that does not exist so in the show method i fixed this by doing ` @articles = @user.articles`.
 
+- Bloggers page with all bloggers: Similar to showing all articles i created a page with all bloggers. I created an index action `@users = User.all` to get all users that have been created. Then followed this up by creating a index.html for users. I then copied the code from articles partial and updated the code to suit users. I lastly added a link to the navigation partial which sends a user to the bloggers list page.
+
 - Ruby version
 
 - System dependencies
