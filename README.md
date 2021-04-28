@@ -129,6 +129,8 @@ Intro:
 
 - Bloggers page with all bloggers: Similar to showing all articles i created a page with all bloggers. I created an index action `@users = User.all` to get all users that have been created. Then followed this up by creating a index.html for users. I then copied the code from articles partial and updated the code to suit users. I lastly added a link to the navigation partial which sends a user to the bloggers list page.
 
+- Pagination: This limits the number of items being shown on a page. Installed the gem and used bundle install, Then changed the index code for articles and user controller to contain paginate keyword and the show method for users controller also had to be changed. Then added a div with paginate class in the views where it was needed and added css.
+
 - Ruby version
 
 - System dependencies
