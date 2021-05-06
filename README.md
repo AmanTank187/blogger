@@ -141,6 +141,8 @@ Intro:
 
 - Delete method takes place when user clicks log out. the Session[user_id] is set to nil, flash message shown and you are redirected to homepage.
 
+- Added two helper methods. Current_user and logged in?. Current user method assigns a users to it if the session is created. To stop going into the database everytime the method is called i used `||=` which means if its not assigned already then assign it. Logged_in? method justs turns current_user into bool format.
+
 - Ruby version
 
 - System dependencies
