@@ -135,6 +135,12 @@ Intro:
 
 - Created a sessions controller to allow users to log in.
 
+- Created a new sessions method which is essiential a get request for the log in form.
+
+- Created a create method which is a post request using the params from the log in form. Checks if the user exists and authenticates the username and password. Session[user_id] is assigned user.id if everything goes to plan and user will be shown a flash message and redirected. If it does not go to plan it will show a flash message and render the form again.
+
+- Delete method takes place when user clicks log out. the Session[user_id] is set to nil, flash message shown and you are redirected to homepage.
+
 - Ruby version
 
 - System dependencies
