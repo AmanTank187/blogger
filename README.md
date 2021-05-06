@@ -131,6 +131,10 @@ Intro:
 
 - Pagination: This limits the number of items being shown on a page. Installed the gem and used bundle install, Then changed the index code for articles and user controller to contain paginate keyword and the show method for users controller also had to be changed. Then added a div with paginate class in the views where it was needed and added css.
 
+# Sessions model:
+
+- Created a sessions controller to allow users to log in.
+
 - Ruby version
 
 - System dependencies
