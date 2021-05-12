@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
     def create 
         @article = Article.new(article_params)
         #Hardcoding user until authentication is implemented!
-        @article.user = User.first 
+        @article.user = current_user
         if @article.save
             #If the article is saved then it will show the message and redirect user
             #Want the flash notice to appear on the layout page
