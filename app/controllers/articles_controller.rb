@@ -66,8 +66,9 @@ class ArticlesController < ApplicationController
     end 
     
     #Checks if the current user equals the user who posted the article so users can't modify other users articles. 
+    #Checks 
     def require_same_user
-        if current_user != @article.user
+        if current_user != @article.user && !current_user.admin?
             flash[:alert] = "Can't edit this article"
             redirect_to @article
         end 

@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
     def destroy
         @user.destroy
-        session[:user_id] = nil #Setting session back to nil otherwise session id will still be assigned to the account.
+        session[:user_id] = nil if @user == current_user#Setting session back to nil otherwise session id will still be assigned to the account.
         flash[:notice] = "Account is successfully deleted"
         redirect_to root_path
     end 
@@ -60,8 +60,8 @@ class UsersController < ApplicationController
     end 
 
     def require_same_user
-        if current_user != @user
-            flash[:alert] = "Can't edit this user"
+        if current_user != @user && !current_user.admin?
+            flash[:alert] = "Can't edit or delete this user"
             redirect_to @user
         end 
     end 
