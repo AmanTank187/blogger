@@ -7,12 +7,14 @@ Intro:
 
 ## Focus
 
-- Back-end: Database associations, MVC
+- Back-end: Database associations, MVC, Well tested application
 - Front-end: Using bootstrap to make a good looking website.
 
 ## Approach
 
-- Ensuring the fundamentals are done correctly
+- Ensuring the fundamentals are done correctly.
+- Clean code
+- Well tested code
 - Write the program from scratch and not rely on ruby magic / generators in order to get a good understanding of how rails work.
 
 ---
