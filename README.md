@@ -7,7 +7,7 @@ Intro:
 
 ## Focus
 
-- Back-end: Database associations, one to many, many to many.
+- Back-end: Database associations, MVC
 - Front-end: Using bootstrap to make a good looking website.
 
 ## Approach
