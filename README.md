@@ -21,11 +21,15 @@ Intro:
 
 ## Learnings
 
-- form_with helpers are very useful. Research them!
+- Validation with models.
+
+- Creating controllers without using generate method.
+
+- Enable log in/sign up without using gems such as devise.
 
 - REST - Representational state transfer: Mapping HTTP verbs to CRUD actions. HTTP verbs are get,post,put/patch and destory.
 
-- resources provide REST-ful routes to rails resources(article)
+- Understanding of MVC due to rails strict layout.
 
 ## Problems faced:
 
