@@ -27,6 +27,10 @@ Intro:
 
 - Enable log in/sign up without using gems such as devise.
 
+- Using partials to minimise writing code on the front end. 
+
+- Being able to write model tests. 
+
 - REST - Representational state transfer: Mapping HTTP verbs to CRUD actions. HTTP verbs are get,post,put/patch and destory.
 
 - Understanding of MVC due to rails strict layout.
@@ -41,16 +45,4 @@ Intro:
 
 - I cloned the repo into a new enviroment and was not able to run local host, i was getting an error that said i had to require bootstrap. When i looked into these errors and fixed them i got further errors about webpack and its manifest. To resolve all the errors i need to run yarn if i clone the repo into a new enviroment.
 
-- Ruby version
-
-- System dependencies
-
-- Configuration
-
-- Database creation
-
-- Database initialization
-
-- How to run the test suite
-
-- Deployment instructions
+## Successes :
