@@ -37,7 +37,7 @@ Intro:
 
 ![Previous commits](https://user-images.githubusercontent.com/37899538/112188037-8c7cb500-8bfa-11eb-875a-1efbe8657b60.png)
 
-- Deploying to heroku was an issue for me. My ruby version in the gemfile did not work with heroku 20 so i had to change the version to 2.6.6 and then the bunlder needed updating. Once this was done, i used a ENV variable in the database.yml file for production and rain 'heroku run rails db:migrate" and the app was finally deployed to heroku.
+- Deploying to heroku was an issue for me. My ruby version in the gemfile did not work with heroku 20 so i had to change the version to 2.6.6 and then the bunlder needed updating. Once this was done, i used a ENV variable in the database.yml file for production and ran 'heroku run rails db:migrate" and the app was finally deployed to heroku.
 
 - I cloned the repo into a new enviroment and was not able to run local host, i was getting an error that said i had to require bootstrap. When i looked into these errors and fixed them i got further errors about webpack and its manifest. To resolve all the errors i need to run yarn if i clone the repo into a new enviroment.
 
