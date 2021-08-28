@@ -7,8 +7,9 @@ Intro:
 
 ## Focus
 
-- Back-end: Database associations, MVC, Well tested application
+- Back-end: Database associations, MVC, Well tested application.
 - Front-end: Using bootstrap to make a good looking website.
+- Getting comfortable with rails. 
 
 ## Approach
 
@@ -23,7 +24,7 @@ Intro:
 
 - Validation with models.
 
-- Creating controllers without using generate method.
+- Creating controllers without using generate methods.
 
 - Enable log in/sign up without using gems such as devise.
 
