@@ -8,9 +8,12 @@ class UsersController < ApplicationController
         @articles = @user.articles.paginate(page: params[:page], per_page: 5)
     end 
 
-    def index 
+
+    def index
         @users = User.paginate(page: params[:page], per_page: 5)
     end 
+
+   
 
     def new 
         #Initialising user
@@ -56,7 +59,7 @@ class UsersController < ApplicationController
     end 
 
     def user_params
-        params.require(:user).permit(:username, :email, :password)
+        params.require(:user).permit(:username, :email, :password, :search)
     end 
 
     def require_same_user
