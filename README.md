@@ -5,6 +5,14 @@ Intro:
 
 ---
 
+![Screenshot 2021-08-31 at 16 11 12](https://user-images.githubusercontent.com/37899538/131529519-177b4492-27fd-401a-adc6-23ffcedc9624.png)
+
+![Screenshot 2021-08-31 at 16 11 48](https://user-images.githubusercontent.com/37899538/131529580-366ccc80-49ff-4fef-8372-6e13549f791b.png)
+
+![Screenshot 2021-08-31 at 16 15 05](https://user-images.githubusercontent.com/37899538/131529620-f80b7b82-256c-4f16-bf22-42f62acbbe5a.png)
+
+---
+
 ## Focus
 
 - Back-end: Database associations, MVC, Well tested application.
