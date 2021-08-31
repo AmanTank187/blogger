@@ -43,3 +43,15 @@ Intro:
 - I cloned the repo into a new enviroment and was not able to run local host, i was getting an error that said i had to require bootstrap. When i looked into these errors and fixed them i got further errors about webpack and its manifest. To resolve all the errors i need to run yarn if i clone the repo into a new enviroment.
 
 ## Successes :
+
+- More comfortable and confident using ruby on rails.
+
+- Creating associations between models. 
+
+- Learning how to create an authentication system without devise.
+
+- Well tested application and learning more about testing within rails. 
+
+- Being able to create a good looking application with bootstrap. 
+
+
