@@ -5,8 +5,9 @@ class SessionsController < ApplicationController
 
     def create
         user = User.find_by(username: params[:session][:username])
-
+            #Finds the user by the params session hash. 
         if user && user.authenticate(params[:session][:password])
+            #If the user is found and the password of the params session hash equals user password it is then authenticated 
             session[:user_id] = user.id  
             flash[:notice] = "Logged in sucessfully"
             redirect_to user
