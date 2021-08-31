@@ -27,9 +27,16 @@ RSpec.describe User, type: :model do
             expect(user).to eq(false)
         end 
 
-        it "does not save if email is not provided" do 
+        it "does not save if email is not provided in correct format" do 
             user = User.new(username: "amantest",
             email: "amantestexample.com", 
+            password: "amantest").save
+            expect(user).to eq(false)
+        end 
+
+        it "does not save if email is not provided" do 
+            user = User.new(username: "amantest",
+            email: nil, 
             password: "amantest").save
             expect(user).to eq(false)
         end 
