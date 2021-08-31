@@ -32,7 +32,7 @@ Intro:
 
 - Being able to write model tests. 
 
-- REST - Representational state transfer: Mapping HTTP verbs to CRUD actions. HTTP verbs are get,post,put/patch and destory.
+- REST - Mapping HTTP verbs to CRUD actions. HTTP verbs are get,post,put/patch and destroy.
 
 - Understanding of MVC due to rails strict layout.
 
