@@ -5,6 +5,14 @@ Intro:
 
 ---
 
+![Screenshot 2021-08-31 at 16 11 12](https://user-images.githubusercontent.com/37899538/131529519-177b4492-27fd-401a-adc6-23ffcedc9624.png)
+
+![Screenshot 2021-08-31 at 16 11 48](https://user-images.githubusercontent.com/37899538/131529580-366ccc80-49ff-4fef-8372-6e13549f791b.png)
+
+![Screenshot 2021-08-31 at 16 15 05](https://user-images.githubusercontent.com/37899538/131529620-f80b7b82-256c-4f16-bf22-42f62acbbe5a.png)
+
+---
+
 ## Focus
 
 - Back-end: Database associations, MVC, Well tested application.
@@ -32,18 +40,28 @@ Intro:
 
 - Being able to write model tests. 
 
-- REST - Representational state transfer: Mapping HTTP verbs to CRUD actions. HTTP verbs are get,post,put/patch and destory.
+- REST - Mapping HTTP verbs to CRUD actions. HTTP verbs are get,post,put/patch and destroy.
 
 - Understanding of MVC due to rails strict layout.
 
 ## Problems faced:
 
-- Whilst implementing the delete method for the article method i came across an unusual error which seemed to be coming from webpacker and the javascript tag within the layout/application.html.erb file. The error was that every time i would try to delete an article it would just show the article and was not understanding that i wanted a delete request. It Seemed like a deep rooted issue so i decided to create a new rails project and copy my code over... it started to work the way i intended it too. At this point on my previous repo i was 13 commits in.
-
-![Previous commits](https://user-images.githubusercontent.com/37899538/112188037-8c7cb500-8bfa-11eb-875a-1efbe8657b60.png)
-
 - Deploying to heroku was an issue for me. My ruby version in the gemfile did not work with heroku 20 so i had to change the version to 2.6.6 and then the bunlder needed updating. Once this was done, i used a ENV variable in the database.yml file for production and ran 'heroku run rails db:migrate" and the app was finally deployed to heroku.
 
 - I cloned the repo into a new enviroment and was not able to run local host, i was getting an error that said i had to require bootstrap. When i looked into these errors and fixed them i got further errors about webpack and its manifest. To resolve all the errors i need to run yarn if i clone the repo into a new enviroment.
 
+- When testing my application i wasn't able to pass a user_id correctly when creating an article. Using rails console i tested multiple theories and came to a solution that worked. 
+
 ## Successes :
+
+- More comfortable and confident using ruby on rails.
+
+- Creating associations between models. 
+
+- Learning how to create an authentication system without devise.
+
+- Well tested application and learning more about testing within rails. 
+
+- Being able to create a good looking application with bootstrap. 
+
+
