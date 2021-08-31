@@ -42,6 +42,8 @@ Intro:
 
 - I cloned the repo into a new enviroment and was not able to run local host, i was getting an error that said i had to require bootstrap. When i looked into these errors and fixed them i got further errors about webpack and its manifest. To resolve all the errors i need to run yarn if i clone the repo into a new enviroment.
 
+- When testing my application i wasn't able to pass a user_id correctly when creating an article. Using rails console i tested multiple theories and came to a solution that worked. 
+
 ## Successes :
 
 - More comfortable and confident using ruby on rails.
