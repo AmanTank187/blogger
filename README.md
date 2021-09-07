@@ -87,4 +87,7 @@ Intro:
 
 ## How to add to this project? :
 
+- Articles can be tagged into categories like common social medias. 
+  - Need to create a articles category table with article and category id. 
+- new point. 
 
