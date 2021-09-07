@@ -92,7 +92,8 @@ Intro:
   - Need to create a articles category table with article and category id. 
   - Create article category model that belongs to article and category. 
   - The article model and Category model will have "has_many article categories" and then "has many ** through article categories". 
-  - allow article params to allow the array of category ids.
+  - Allow article params to allow the array of category ids.
   - Allow select box for categories that will allow user to select multiple. 
+  - Display the categories on the article.
 - new point. 
 
