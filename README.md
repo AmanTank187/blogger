@@ -52,6 +52,8 @@ Intro:
 
 - Getting more comfortable with feature tests using capybara.
 
+- Using Heroku to deploy the project. 
+
 ## Problems faced:
 
 - Deploying to heroku was an issue for me. My ruby version in the gemfile did not work with heroku 20 so i had to change the version to 2.6.6 and then the bunlder needed updating. Once this was done, i used a ENV variable in the database.yml file for production and ran 'heroku run rails db:migrate" and the app was finally deployed to heroku.
@@ -72,7 +74,13 @@ Intro:
 
 - Being able to create a good looking application with bootstrap. 
 
+- Getting the project on heroku. 
+
 ## What i could have done better? :
+
+- Followed TDD more strictly. 
+- Used a trello board to help with my tickets. 
+- Used branches more often. 
 
 
 ## How to add to this project? :
