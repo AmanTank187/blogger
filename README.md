@@ -44,6 +44,8 @@ Intro:
 
 - Understanding of MVC due to rails strict layout.
 
+- Using the rails console to test my own theories and interact with objects and the DB directly. 
+
 ## Problems faced:
 
 - Deploying to heroku was an issue for me. My ruby version in the gemfile did not work with heroku 20 so i had to change the version to 2.6.6 and then the bunlder needed updating. Once this was done, i used a ENV variable in the database.yml file for production and ran 'heroku run rails db:migrate" and the app was finally deployed to heroku.
@@ -63,5 +65,10 @@ Intro:
 - Well tested application and learning more about testing within rails. 
 
 - Being able to create a good looking application with bootstrap. 
+
+## What i could have done better? :
+
+
+## How to add to this project? :
 
 
