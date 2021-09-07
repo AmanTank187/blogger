@@ -46,6 +46,10 @@ Intro:
 
 - Using the rails console to test my own theories and interact with objects and the DB directly. 
 
+- Learning how to write model specs.
+
+- Getting more comfortable with feature tests using capybara.
+
 ## Problems faced:
 
 - Deploying to heroku was an issue for me. My ruby version in the gemfile did not work with heroku 20 so i had to change the version to 2.6.6 and then the bunlder needed updating. Once this was done, i used a ENV variable in the database.yml file for production and ran 'heroku run rails db:migrate" and the app was finally deployed to heroku.
