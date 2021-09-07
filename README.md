@@ -30,7 +30,7 @@ Intro:
 
 ## Learnings
 
-- Validation with models.
+- Validation with models, validating an email without the help of devise.
 
 - Creating controllers without using generate methods.
 
