@@ -30,7 +30,7 @@ Intro:
 
 ## Learnings
 
-- Validation with models, validating an email without the help of devise.
+- Validation with models, validating an email without the help of devise. Ensuring the password is secure using bcrypt. 
 
 - Creating controllers without using generate methods.
 
