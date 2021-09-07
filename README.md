@@ -79,7 +79,9 @@ Intro:
 ## What i could have done better? :
 
 - Followed TDD more strictly. 
+
 - Used a trello board to help with my tickets. 
+
 - Used branches more often. 
 
 
