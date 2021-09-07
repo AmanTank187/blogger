@@ -34,6 +34,8 @@ Intro:
 
 - Creating controllers without using generate methods.
 
+- Creating migrations and editing tables/DB's.
+
 - Enable log in/sign up without using gems such as devise.
 
 - Using partials to minimise writing code on the front end. 
