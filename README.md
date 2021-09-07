@@ -92,5 +92,6 @@ Intro:
   - Need to create a articles category table with article and category id. 
   - Create article category model that belongs to article and category. 
   - The article model and Category model will have "has_many article categories" and then "has many ** through article categories". 
+  - Edit view when creating article to add categories.
 - new point. 
 
