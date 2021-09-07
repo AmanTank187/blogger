@@ -93,5 +93,6 @@ Intro:
   - Create article category model that belongs to article and category. 
   - The article model and Category model will have "has_many article categories" and then "has many ** through article categories". 
   - Edit view when creating article to add categories.
+  - allow article params to allow the array of category ids.
 - new point. 
 
