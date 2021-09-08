@@ -68,7 +68,7 @@ Intro:
 
 ## How to add to this project? :
 
-- Articles can be tagged into categories like common social medias. 
+- Articles can be tagged into categories like common social media platforms. 
   - Create category model.
   - Need to create a articles category table with article and category id. 
   - Create article category model that belongs to article and category. 
