@@ -31,27 +31,16 @@ Intro:
 ## Learnings
 
 - Validation with models, validating an email without the help of devise. Ensuring the password is secure using bcrypt. 
-
 - Creating controllers without using generate methods.
-
 - Creating migrations and editing tables/DB's.
-
 - Enable log in/sign up without using gems such as devise.
-
 - Using partials to minimise writing code on the front end. 
-
 - Being able to write model tests. 
-
 - REST - Mapping HTTP verbs to CRUD actions. HTTP verbs are get,post,put/patch and destroy.
-
 - Understanding of MVC due to rails strict layout.
-
 - Using the rails console to test my own theories and interact with objects and the DB directly. 
-
 - Learning how to write model specs.
-
 - Getting more comfortable with feature tests using capybara.
-
 - Using Heroku to deploy the project. 
 
 ## Problems faced:
@@ -65,23 +54,15 @@ Intro:
 ## Successes :
 
 - More comfortable and confident using ruby on rails.
-
 - Creating associations between models. 
-
 - Learning how to create an authentication system without devise.
-
 - Well tested application and learning more about testing within rails. 
-
 - Being able to create a good looking application with bootstrap. 
-
 - Getting the project on heroku. 
 
 ## What i could have done better? :
-
 - Followed TDD more strictly. 
-
 - Used a trello board to help with my tickets. 
-
 - Used branches more often. 
 
 
