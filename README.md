@@ -88,5 +88,5 @@ Intro:
   - Javascript on the front end and Rails on the backend.
   - Backend functions return json
   - Make API calls from the frontend with Javascript. 
-- Authentication with Mailer folder
+- Email confirmation with Mailer folder
 
