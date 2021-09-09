@@ -78,7 +78,8 @@ Intro:
   - Display the categories on the article.
  
  - Being able to add other Users as friends. 
- - Being able to message other users using actioncable and Websockets
+ - Being able to message other users using actioncable and Websockets.
+ - Add Request specs
   
 ## A better way to write existing code?: 
 
