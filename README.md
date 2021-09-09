@@ -56,7 +56,7 @@ Intro:
 - More comfortable and confident using ruby on rails.
 - Creating associations between models. 
 - Learning how to create an authentication system without devise.
-- Well tested application and learning more about testing within rails. 
+- More comfortable about testing within rails. 
 - Being able to create a good looking application with bootstrap. 
 - Getting the project on heroku. 
 
