@@ -59,7 +59,7 @@ Intro:
 - Being able to create a good looking application with bootstrap. 
 - Getting the project on heroku. 
 
-## What i could have done better? :
+## How my approach could have been improved? :
 - Followed TDD more strictly. 
 - Used a trello board to help with my tickets. 
 - Used branches more often. 
