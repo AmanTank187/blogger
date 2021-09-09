@@ -79,6 +79,7 @@ Intro:
  - Being able to add other Users as friends. 
  - Being able to message other users using actioncable and Websockets.
  - Add Request specs
+ - Social share button gem to share messages on other social medias
   
 ## A better way to write existing code?: 
 
