@@ -35,7 +35,6 @@ Intro:
 - Creating migrations and editing tables/DB's.
 - Enable log in/sign up without using gems such as devise.
 - Using partials to minimise writing code on the front end. 
-- Being able to write model tests. 
 - REST - Mapping HTTP verbs to CRUD actions. HTTP verbs are get,post,put/patch and destroy.
 - Understanding of MVC due to rails strict layout.
 - Using the rails console to test my own theories and interact with objects and the DB directly. 
