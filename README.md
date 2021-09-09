@@ -76,11 +76,16 @@ Intro:
   - Allow article params to allow the array of category ids.
   - Allow select box for categories that will allow user to select multiple. 
   - Display the categories on the article.
+ 
+ - Being able to add other Users as friends. 
+ - 
   
 ## A better way to write existing code?: 
 
+- Using vue.js to make an interactive website. No refreshes. 
 - Split the front end and back end.
   - Javascript on the front end and Rails on the backend.
   - Backend functions return json
   - Make API calls from the frontend with Javascript. 
+- Authentication with Mailer folder
 
